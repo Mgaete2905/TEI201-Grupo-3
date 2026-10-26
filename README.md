@@ -41,7 +41,9 @@ Prototipo Alpha IoT de monitoreo de la calidad del agua para la fase de agua dul
 2. Librerías: no se necesita instalar ninguna, el código usa solo funciones nativas de Arduino.
 3. Cargar código en Arduino.
 4. Abrir el monitor serial a **9600 baudios**, con la opción **"Nueva línea"** activada.
-5. 
+5. Sumergir la sonda del sensor en el agua. Las lecturas aparecen en ppm, una por segundo.
+6. Para cambiar el umbral de alerta, escribir `umbral=VALOR` en el monitor serial (por ejemplo, `umbral=1500`).
+7. Para calibrar con una solución de ppm conocido, escribir `calibrar=VALOR`.
 ---
 
 ##  Checklist de Entrega
