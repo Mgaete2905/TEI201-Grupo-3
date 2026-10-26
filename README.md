@@ -33,16 +33,15 @@ Prototipo Alpha IoT de monitoreo de la calidad del agua para la fase de agua dul
 ##  Inicio Rápido
 
 ### Requisitos Previos
-- Arduino IDE 2.x
+- Arduino IDE 
 - Fusion 360
-- [Otras herramientas necesarias]
 
 ### Instalación
 1. Clonar el repositorio
-2. Instalar librerías (ver `software/librerias/`)
-3. Cargar código en ESP32/Arduino
-4. [Pasos adicionales]
-
+2. Librerías: no se necesita instalar ninguna, el código usa solo funciones nativas de Arduino.
+3. Cargar código en Arduino.
+4. Abrir el monitor serial a **9600 baudios**, con la opción **"Nueva línea"** activada.
+5. 
 ---
 
 ##  Checklist de Entrega
