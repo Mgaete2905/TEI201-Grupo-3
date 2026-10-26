@@ -9,12 +9,12 @@
 - La falta de monitoreo continuo e independiente de la contaminación que genera la salmonicultura: hoy la carga de nutrientes y residuos se conoce por autorreportes puntuales de las propias empresas, y las comunidades y pescadores no tienen cómo verificar el estado del agua antes de que el daño llegue al mar.
 
 ### Descripción del Proyecto
-[Breve descripción de la solución IoT propuesta]
+Prototipo Alpha IoT de monitoreo de la calidad del agua para la fase de agua dulce de la salmonicultura (ODS 14, meta 14.1). Como primer prototipo, se tiene un sensor de sólidos disueltos (TDS) conectado a un Arduino Uno mide el agua cada 1 segundo, en ppm. Si la lectura supera un umbral ajustable desde el computador, se activan un LED y un zumbador de alerta. Los datos se envían por comunicación serial (USB) al computador. Proyecto del curso TEI201 – Taller de Diseño en Ingeniería (UAI).
 
 ### Estado del Proyecto
-- **Versión actual:** v3.0
-- **Última actualización:** [Fecha]
-- **Estado:** Prototipo final
+- **Versión actual:** v0.1 (Alpha)
+- **Última actualización:** 25/10/2026
+- **Estado:** Prototipo Alpha en desarrollo.
 
 ---
 
