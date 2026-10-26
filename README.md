@@ -1,12 +1,12 @@
 ### Información del Equipo
 - **Integrantes:**
-  - Nombre 1 - Rol 1
-  - Nombre 2 - Rol 2
-  - Nombre 3 - Rol 3
-  - Nombre 4 - Rol 4
+  - Montserrat Gaete
+  - Felipe Lagos
+  - Alfonso Rosello
+  - Alex Sabag
   
-- **ODS Seleccionado:** [Número y nombre]
-- **Problema a resolver:** [Descripción breve]
+- ODS 14: Vida submarina.
+- La falta de monitoreo continuo e independiente de la contaminación que genera la salmonicultura: hoy la carga de nutrientes y residuos se conoce por autorreportes puntuales de las propias empresas, y las comunidades y pescadores no tienen cómo verificar el estado del agua antes de que el daño llegue al mar.
 
 ### Descripción del Proyecto
 [Breve descripción de la solución IoT propuesta]
