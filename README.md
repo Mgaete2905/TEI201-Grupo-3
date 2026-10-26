@@ -37,7 +37,7 @@ Prototipo Alpha IoT de monitoreo de la calidad del agua para la fase de agua dul
 - Fusion 360
 
 ### Instalación
-1. Clonar el repositorio
+1. Clonar el repositorio: https://github.com/Mgaete2905/TEI201-Grupo-3.git
 2. Librerías: no se necesita instalar ninguna, el código usa solo funciones nativas de Arduino.
 3. Cargar código en Arduino.
 4. Abrir el monitor serial a **9600 baudios**, con la opción **"Nueva línea"** activada.
