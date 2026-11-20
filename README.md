@@ -1,81 +1,60 @@
-### Información del Equipo
-- **Integrantes:**
-  - Montserrat Gaete
-  - Felipe Lagos
-  - Alfonso Rosello
-  - Alex Sabag
-  
-- ODS 14: Vida submarina.
-- La falta de monitoreo continuo e independiente de la contaminación que genera la salmonicultura: hoy la carga de nutrientes y residuos se conoce por autorreportes puntuales de las propias empresas, y las comunidades y pescadores no tienen cómo verificar el estado del agua antes de que el daño llegue al mar.
+# TEI201 – Sistema IoT de Monitoreo de la Calidad del Agua
 
-### Descripción del Proyecto
-Prototipo Alpha IoT de monitoreo de la calidad del agua para la fase de agua dulce de la salmonicultura (ODS 14, meta 14.1). Como primer prototipo, se tiene un sensor de sólidos disueltos (TDS) conectado a un Arduino Uno mide el agua cada 1 segundo, en ppm. Si la lectura supera un umbral ajustable desde el computador, se activan un LED y un zumbador de alerta. Los datos se envían por comunicación serial (USB) al computador. Proyecto del curso TEI201 – Taller de Diseño en Ingeniería (UAI).
+**Universidad Adolfo Ibáñez | Taller de Diseño en Ingeniería | Grupo 3**
 
-### Estado del Proyecto
-- **Versión actual:** v0.1 (Alpha)
-- **Última actualización:** 25/10/2026
-- **Estado:** Prototipo Alpha en desarrollo.
+## Información del equipo
 
----
+**Integrantes:**
+- Montserrat Gaete
+- Felipe Lagos
+- Alfonso Rosello
+- Alex Sabag
 
-##  Estructura del Repositorio
-```
-├── hardware/          # Circuitos, esquemas y BOM
-├── software/          # Código Arduino y librerías
-├── diseno_3d/        # Modelos Fusion 360 y renders
-├── testing/          # Validación con usuarios
-├── documentacion/    # Reportes y presentación
-└── iteraciones/      # Historial de versiones
-```
+**ODS asociado:** ODS 14 – Vida submarina (meta 14.1).
 
----
+## Problemática
 
-##  Inicio Rápido
+El proyecto aborda la necesidad de contar con herramientas accesibles para monitorear la calidad del agua en actividades relacionadas con la salmonicultura.
 
-### Requisitos Previos
-- Arduino IDE 
-- Fusion 360
+La disponibilidad limitada de información continua e independiente dificulta la detección oportuna de alteraciones en las condiciones del agua y el seguimiento de posibles impactos ambientales.
 
-### Instalación
-1. Clonar el repositorio: https://github.com/Mgaete2905/TEI201-Grupo-3.git
-2. Librerías: no se necesita instalar ninguna, el código usa solo funciones nativas de Arduino.
-3. Cargar código en Arduino.
-4. Abrir el monitor serial a **9600 baudios**, con la opción **"Nueva línea"** activada.
-5. Sumergir la sonda del sensor en el agua. Las lecturas aparecen en ppm, una por segundo.
-6. Para cambiar el umbral de alerta, escribir `umbral=VALOR` en el monitor serial (por ejemplo, `umbral=1500`).
-7. Para calibrar con una solución de ppm conocido, escribir `calibrar=VALOR`.
----
+## Descripción del proyecto
 
-##  Checklist de Entrega
+El proyecto busca desarrollar un sistema de monitoreo de la calidad del agua mediante distintas iteraciones de prototipos, incorporando progresivamente sensores, sistemas de procesamiento de datos y herramientas de comunicación.
 
-### Hardware ✓
-- [ ] Esquema del circuito (Fritzing/Wokwi)
-- [ ] BOM completo
-- [ ] Fotos de alta resolución
+La primera versión, denominada **Prototipo Alpha**, utilizó un Arduino Uno y un sensor TDS para registrar sólidos disueltos en el agua, incorporando alertas locales mediante LED y zumbador.
 
-### Software ✓
-- [ ] Código comentado
-- [ ] Librerías documentadas
-- [ ] Manual de instalación
+Posteriormente, el proyecto evolucionó hacia un **prototipo IoT de monitoreo de turbidez**, utilizando un ESP8266 NodeMCU y un sensor G-008. Esta versión permite transmitir mediciones a ThingSpeak, estimar valores de turbidez en NTU y generar notificaciones mediante Telegram.
 
-### Diseño 3D ✓
-- [ ] Archivos Fusion 360 (.f3d) con TODOS los componentes
-- [ ] Renders de alta calidad (1+ ángulos)
-- [ ] Planos técnicos
+El desarrollo contempla etapas de diseño, construcción, programación, caracterización experimental y evaluación, con el propósito de mejorar progresivamente las capacidades del sistema.
 
-### Testing ✓
-- [ ] Reporte de testing con usuarios (mín. 5)
-- [ ] Evidencias fotográficas/videos
-- [ ] Datos cuantitativos
+## Estado del proyecto
 
-### Documentación ✓
-- [ ] Reporte final (máx. 15 páginas)
-- [ ] Presentación (10 min)
+- **Curso:** TEI201 – Taller de Diseño en Ingeniería.
+- **Última actualización:** 19/11/2026.
+- **Estado:** Desarrollo y evaluación experimental.
+- **Versión inicial:** Prototipo Alpha.
+- **Versión posterior:** Prototipo IoT de turbidez.
 
----
+## Organización del repositorio
 
+El repositorio reúne la documentación y los archivos correspondientes a las distintas etapas de desarrollo del proyecto.
 
----
+Cada prototipo cuenta con su propia documentación técnica, donde se incluyen los antecedentes de diseño, componentes utilizados, esquemáticos, código de programación y resultados de las pruebas realizadas.
 
-##  Licencia
-Este proyecto es desarrollado como parte del curso TEI201 - Facultad de Ingenieria y Ciencias - Universidad Adolfo Ibañez
+Esta organización permite mantener un registro de la evolución del proyecto y facilitar la consulta de las distintas versiones.
+
+## Tecnologías utilizadas
+
+A lo largo del desarrollo se han utilizado distintas herramientas y tecnologías, entre ellas:
+
+- Arduino Uno y ESP8266 NodeMCU.
+- Sensores TDS y de turbidez G-008.
+- Arduino IDE.
+- ThingSpeak para almacenamiento y visualización de datos.
+- Telegram para notificaciones.
+- Fusion 360 para diseño y modelado tridimensional.
+
+## Uso académico
+
+Proyecto desarrollado por el Grupo 3 en el marco del curso **TEI201 – Taller de Diseño en Ingeniería**, Facultad de Ingeniería y Ciencias, Universidad Adolfo Ibáñez.
