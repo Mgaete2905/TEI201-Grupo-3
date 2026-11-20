@@ -1,56 +1,25 @@
 # Documentación del Proyecto
 
-## Contenido
+## Descripción
 
-Esta carpeta contiene la documentación final del proyecto para la entrega del Avance #3.
+Esta carpeta reúne la documentación correspondiente al **Avance #3 del proyecto TEI201 – Taller de Diseño en Ingeniería**, desarrollado en la Universidad Adolfo Ibáñez.
 
----
+Su propósito es organizar los documentos que presentan el desarrollo del prototipo, los resultados obtenidos y las principales conclusiones del proyecto, facilitando su consulta y revisión.
 
-##  Carpetas
+## Estructura de la carpeta
 
-#### `reporte_final/`
-Reporte completo del proyecto (máximo 15 páginas)
+La documentación se encuentra organizada en dos subcarpetas principales:
 
-#### `presentacion/`
-Slides de la presentación final
+### `reporte_final/`
 
----
+Contiene el informe técnico del proyecto, en el que se documentan el proceso de desarrollo, las decisiones de diseño, la implementación del prototipo y los resultados de las pruebas realizadas.
 
-## Documentos Principales
+### `presentacion/`
 
-### 1. Reporte Final del Proyecto
-`reporte_final_v3.pdf`
+Contiene el material utilizado para la presentación del proyecto, donde se sintetizan la problemática abordada, la solución desarrollada, los principales resultados y las conclusiones.
 
-Máximo 15 páginas, formato profesional
+## Organización de los archivos
 
-### 2. Presentación Final
-`presentacion_avance3.pdf` o `.pptx`
+Cada subcarpeta cuenta con su propia documentación y descripción específica, permitiendo identificar los archivos correspondientes y comprender su finalidad dentro de la entrega.
 
-Duración: 10 minutos de presentación
-
----
-
-## Checklist de Entrega
-
-### Documentos Obligatorios
-- [ ] Reporte final PDF (máx. 15 páginas)
-- [ ] Presentación PDF/PPTX
-- [ ] Manual de usuario (puede estar integrado en reporte)
-
-### Contenido del Reporte
-- [ ] Contexto y problemática ODS
-- [ ] Solución propuesta (descripción técnica)
-- [ ] Proceso de diseño e iteraciones
-- [ ] Documentación técnica (resumen)
-- [ ] Resultados de testing y validación
-- [ ] Análisis de impacto ODS
-- [ ] Conclusiones y trabajo futuro
-- [ ] Referencias bibliográficas
-
-### Contenido de Presentación
-- [ ] Problema y contexto ODS (2 min)
-- [ ] Solución técnica (3 min)
-- [ ] Iteraciones y refinamiento (2 min)
-- [ ] Validación con usuarios (2 min)
-- [ ] Demo en vivo (3 min)
-- [ ] Conclusiones (1 min)
+Esta estructura busca mantener la información ordenada, facilitar el acceso a los documentos y conservar un registro del trabajo realizado durante el desarrollo del proyecto.
