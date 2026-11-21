@@ -1,107 +1,153 @@
-# Iteración 1 - Concepto Inicial
+# Iteración 2 - Primera Mejora Significativa
 
 ## Información General
 
 **Fecha:** [XX/XX/2025]  
-**Versión:** v1.0  
-**Estado:** Prototipo alpha - Prueba de concepto  
-**Avance asociado:** Planificación inicial / Avance #1
+**Versión:** v2.0  
+**Estado:** Prototipo funcional mejorado  
+**Avance asociado:** Avance #2
 
 ---
 
 ## Descripción
 
-Primera versión del prototipo, enfocada en validar la factibilidad técnica del concepto.
+Segunda versión del prototipo, incorporando feedback de la iteración 1 y del Avance #1. Incluye mejoras significativas en funcionalidad y primeros pasos en diseño de encapsulado.
 
-**Objetivo de esta iteración:**
-- Probar conexión de sensores básicos
-- Validar comunicación con microcontrolador
-- Demostrar concepto de actuación
-- Circuito básico en protoboard
+**Objetivos de esta iteración:**
+- Corregir problemas identificados en v1
+- Agregar funcionalidades adicionales
+- Iniciar diseño 3D del encapsulado
+- Realizar primeras pruebas con usuarios
 
 ---
 
-## Componentes Utilizados
+## Cambios Respecto a v1
 
 ### Hardware
-- Microcontrolador: [Modelo]
-- Sensores:
-  - [Sensor 1]
-  - [Sensor 2]
-- Actuadores:
-  - [Actuador 1]
-- Otros: [Lista]
+**Agregado:**
+- [Componente nuevo 1]
+- [Componente nuevo 2]
+
+**Modificado:**
+- [Cambio 1] - Razón: [Justificación]
+- [Cambio 2] - Razón: [Justificación]
+
+**Removido:**
+- [Componente removido] - Razón: [Justificación]
 
 ### Software
-- IDE: Arduino IDE
-- Librerías: [Lista]
-- Versión código: v1.0
+**Nuevas funcionalidades:**
+- [Feature 1]
+- [Feature 2]
+
+**Optimizaciones:**
+- [Optimización 1]
+- [Optimización 2]
+
+**Bugs corregidos:**
+- [Bug 1 de v1]
+- [Bug 2 de v1]
+
+### Diseño Mecánico
+- Primer diseño de encapsulado en Fusion 360
+- Prototipo impreso en 3D
+- Integración de componentes en carcasa
 
 ---
 
-## Fotos del Prototipo
+## Fotos del Prototipo v2
 
 Incluir en esta carpeta:
-- `v1_circuito_protoboard.jpg`
-- `v1_vista_general.jpg`
-- `v1_detalle_conexiones.jpg`
+- `v2_prototipo_completo.jpg`
+- `v2_circuito_integrado.jpg`
+- `v2_encapsulado_inicial.jpg`
+- `v2_testing_usuario.jpg`
 
 ---
 
-## Resultados de Testing Inicial
+## Resultados de Testing
 
 ### Funcionalidad Lograda
 ✅ [Función 1]  
 ✅ [Función 2]  
-❌ [Función 3 - no funcionó]
+✅ [Función 3]  
+⚠️ [Función 4 - parcial]
 
-### Problemas Identificados
+### Feedback del Avance #2
+
+**Comentarios del profesor/ayudante:**
+1. [Comentario 1]
+   - Acción: [Plan de mejora para v3]
+
+2. [Comentario 2]
+   - Acción: [Plan de mejora para v3]
+
+### Testing con Usuarios (2-3 personas)
+
+**Resultados cuantitativos:**
+- Facilidad de uso promedio: [X/5]
+- Satisfacción promedio: [X/5]
+
+**Feedback cualitativo:**
+- Positivo: [Comentarios]
+- A mejorar: [Comentarios]
+
+---
+
+## Problemas Pendientes
 
 1. **Problema 1:**
    - Descripción: [Detalles]
-   - Causa probable: [Análisis]
-   - Solución propuesta: [Plan]
+   - Prioridad: Alta/Media/Baja
+   - Plan para v3: [Solución propuesta]
 
 2. **Problema 2:**
    - Descripción: [Detalles]
-   - Causa probable: [Análisis]
-   - Solución propuesta: [Plan]
+   - Prioridad: Alta/Media/Baja
+   - Plan para v3: [Solución propuesta]
 
 ---
 
-## Aprendizajes
+## Comparación v1 vs v2
 
-### Técnicos
-- [Aprendizaje 1]
-- [Aprendizaje 2]
-
-### De Diseño
-- [Aprendizaje 1]
-- [Aprendizaje 2]
+| Aspecto | v1 | v2 | Mejora |
+|---------|----|----|--------|
+| Sensores funcionales | 2/3 | 3/3 | ✅ |
+| Tiempo de respuesta | 500ms | 200ms | ↓60% |
+| Consumo energético | 250mA | 180mA | ↓28% |
+| Encapsulado | ❌ | Prototipo | ✅ |
+| Usuarios testeados | 0 | 2 | ✅ |
 
 ---
 
-## Plan para Iteración 2
+## Plan para Iteración 3 (Versión Final)
 
-### Mejoras Planificadas
+### Mejoras Críticas
 
 **Hardware:**
-- [ ] [Mejora 1]
-- [ ] [Mejora 2]
+- [ ] [Mejora crítica 1]
+- [ ] [Mejora crítica 2]
 
 **Software:**
-- [ ] [Mejora 1]
-- [ ] [Mejora 2]
+- [ ] [Optimización 1]
+- [ ] [Feature faltante]
 
 **Diseño:**
-- [ ] Iniciar diseño de encapsulado
-- [ ] Mejorar ruteo de cables
+- [ ] Refinar encapsulado
+- [ ] Mejorar accesibilidad
+- [ ] Finalizar sistema de montaje
+
+**Testing:**
+- [ ] Testear con 5+ usuarios
+- [ ] Validar métricas ODS
+- [ ] Instalación en contexto real
 
 ---
 
 ## Archivos en esta Carpeta
 
-- `v1_codigo.ino` - Código de esta versión
-- `v1_esquema.png` - Esquema del circuito
-- `v1_fotos/` - Fotografías del prototipo
-- `v1_notas.txt` - Notas adicionales del equipo
+- `v2_codigo.ino` - Código de esta versión
+- `v2_esquema.png` - Esquema del circuito actualizado
+- `v2_modelo3d.f3d` - Primer diseño en Fusion 360
+- `v2_fotos/` - Fotografías del prototipo
+- `v2_feedback.pdf` - Compilación de comentarios recibidos
