@@ -12,13 +12,6 @@ Durante las pruebas experimentales, las mediciones realizadas por el sensor G-00
 
 Se realizaron **cinco ciclos experimentales**, utilizando agua limpia y soluciones de caolín de 185 y 345 mg/L, con mediciones de aproximadamente dos minutos por muestra.
 
-ThingSpeak permitió visualizar gráficamente dos variables:
-
-- **NTU estimados (Field 3):** evolución temporal de la turbidez estimada durante las mediciones.
-- **Estado de alerta (Field 4):** activación (1) o desactivación (0) de la alerta según el umbral programado.
-
-Las imágenes se conservaron como evidencia visual del comportamiento del sistema durante las pruebas.
-
 ## Contenido de la carpeta
 
 La carpeta reúne los gráficos correspondientes a los cinco ciclos experimentales.
@@ -33,7 +26,5 @@ Ambos gráficos permiten comparar visualmente las mediciones de turbidez con la 
 ## Utilización de los gráficos
 
 Las imágenes permiten verificar la correspondencia entre los valores de NTU estimados y la activación de las alertas, además de identificar fluctuaciones alrededor del umbral que pueden ocasionar cambios intermitentes en su estado.
-
-Durante las pruebas también se comprobó la recepción de notificaciones mediante Telegram, con tiempos observados de aproximadamente **10 a 13 segundos** desde la activación registrada. Este tiempo corresponde a una observación experimental y no se obtiene directamente de los gráficos.
 
 Estos registros complementan el análisis cuantitativo realizado a partir de los archivos CSV y se conservan como respaldo visual del funcionamiento del sistema de alertas del prototipo.
