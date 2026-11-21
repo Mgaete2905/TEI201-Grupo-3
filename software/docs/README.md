@@ -1,57 +1,41 @@
 # Documentación de Software
 
-## Contenido
+## Descripción
 
-### Diagramas de Flujo
-Incluir diagramas de las funciones principales del sistema.
+Esta carpeta contiene la documentación técnica elaborada para facilitar la comprensión, configuración y reproducción del sistema IoT de monitoreo de turbidez, desarrollado para el proyecto TEI201 – Taller de Diseño en Ingeniería.
 
-**Formato:** PNG, PDF o draw.io
+Los documentos permiten conocer la lógica general del programa y los procedimientos utilizados para configurar las plataformas de almacenamiento de datos y generación de notificaciones.
 
-### Documentación de Funciones
+## Contenido de la carpeta
 
-#### Funciones Principales
+### Diagrama de flujo del software
 
-**función1()**
-- **Propósito:** [Descripción]
-- **Parámetros:** [Tipo y descripción]
-- **Retorna:** [Tipo y descripción]
-- **Ejemplo de uso:**
-```cpp
-// Código de ejemplo
-```
+Documento en formato PDF que representa gráficamente la secuencia de operaciones y decisiones del programa desarrollado para el ESP8266 NodeMCU.
 
----
+Permite comprender la estructura lógica del software, desde la inicialización del sistema hasta el procesamiento de las mediciones, su transmisión y la gestión de alertas.
 
-## Manual de Instalación
+### Guía de configuración de ThingSpeak
 
-[Paso a paso detallado para instalar y configurar el software]
+Documento que explica paso a paso el procedimiento utilizado para configurar ThingSpeak como plataforma de almacenamiento y visualización de datos.
 
----
+Incluye la creación del canal, configuración de los campos, obtención de las credenciales necesarias y verificación de la recepción de mediciones.
 
-## Manual de Operación
+### Guía de configuración de Telegram
 
-### Encendido del Sistema
-1. [Paso 1]
-2. [Paso 2]
+Documento que describe el procedimiento utilizado para implementar las notificaciones automáticas mediante Telegram.
 
-### Operación Normal
-1. [Paso 1]
-2. [Paso 2]
+Incluye la creación del bot, obtención de las credenciales de acceso, configuración de la comunicación con el ESP8266 y comprobación de la recepción de mensajes.
 
-### Apagado del Sistema
-1. [Paso 1]
-2. [Paso 2]
+## Utilización de la documentación
 
----
+Para comprender la estructura y funcionamiento general del programa, se recomienda consultar inicialmente el diagrama de flujo.
 
-## Troubleshooting
+Las guías de ThingSpeak y Telegram pueden utilizarse de manera independiente, según la plataforma que se necesite configurar. Ambas contienen instrucciones detalladas que permiten reproducir los procedimientos realizados durante el desarrollo del prototipo.
 
-### Problemas Comunes
+## Consideraciones
 
-**Problema 1: No conecta a WiFi**
-- Causa probable: [Explicación]
-- Solución: [Pasos]
+Los documentos se elaboraron a partir de la configuración implementada durante el desarrollo del prototipo alfa.
 
-**Problema 2: Sensor no responde**
-- Causa probable: [Explicación]
-- Solución: [Pasos]
+Por seguridad, las guías no incluyen contraseñas ni claves privadas, por lo que cada usuario deberá generar e incorporar sus propias credenciales.
+
+La documentación se conserva como material de consulta para facilitar la configuración del sistema y apoyar su mantenimiento o modificación en futuras iteraciones.
