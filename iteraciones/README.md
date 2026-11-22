@@ -21,7 +21,7 @@ iteraciones/
 
 ```
 
-Cada carpeta reúne la documentación correspondiente a una etapa del proyecto, incluyendo presentaciones, informes, fotografías, esquemas, código y resultados, según los materiales efectivamente desarrollados.
+Cada carpeta reúne la documentación correspondiente a una etapa del proyecto, incluyendo presentaciones, informes, fotografías, esquemas, código y resultados, según los materiales efectivamente desarrollados. La información correspondiente a la tercera iteración se encuentra distribuida en las diversas carpetas del Github.
 
 ## Tabla comparativa de iteraciones
 
