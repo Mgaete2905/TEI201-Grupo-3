@@ -2,154 +2,162 @@
 
 ## Propósito
 
-Esta carpeta documenta la evolución del prototipo a través de las diferentes versiones desarrolladas durante el curso.
+Esta carpeta documenta la evolución del proyecto de monitoreo de calidad del agua en la salmonicultura, desarrollado en la asignatura TEI201 – Taller de Diseño en Ingeniería.
 
-**CRÍTICO:** Demostrar el proceso iterativo es un requisito para obtener puntaje completo en "Integración y Refinamiento" (2.5 puntos).
+Su objetivo es evidenciar el proceso iterativo de diseño, desde la identificación de la problemática ambiental y la conceptualización de una solución hasta la construcción, integración y validación experimental de un prototipo IoT funcional.
+
+El proyecto se relaciona con el **ODS 14: Vida Submarina**, especialmente con la meta 14.1, mediante una propuesta de monitoreo independiente y alerta temprana frente a alteraciones de la calidad del agua.
 
 ---
 
-## Estructura de Carpetas
+## Estructura de carpetas
 
-Cada iteración tiene su propia carpeta con documentación de esa versión:
-
-```
+```text
 iteraciones/
-├── iteracion_1/    # Concepto inicial - Prototipo alpha
-├── iteracion_2/    # Primera iteración - Avance #2
-└── iteracion_3/    # Versión final - Avance #3
+├── iteracion_1/
+│   └── README.md
+├── iteracion_2/
+    └── README.md
+
 ```
 
----
+Cada carpeta reúne la documentación correspondiente a una etapa del proyecto, incluyendo presentaciones, informes, fotografías, esquemas, código y resultados, según los materiales efectivamente desarrollados.
 
-## Contenido de Cada Iteración
+## Tabla comparativa de iteraciones
 
-Cada carpeta debe incluir:
-
-1. **README.md** - Descripción de la versión
-2. **Fotos** - Imágenes del prototipo en ese estado
-3. **Esquema** - Circuito de esa versión (si cambió)
-4. **Código** - Versión del software (si cambió)
-5. **Notas** - Problemas identificados y mejoras planificadas
-
----
-
-## Tabla Comparativa de Iteraciones
-
-| Aspecto | v1 | v2 | v3 |
-|---------|----|----|----| 
-| **Fecha** | [fecha] | [fecha] | [fecha] |
-| **Sensores** | [lista] | [lista] | [lista] |
-| **Actuadores** | [lista] | [lista] | [lista] |
-| **Conectividad** | [tipo] | [tipo] | [tipo] |
-| **Encapsulado** | ❌ | Prototipo | Finalizado |
-| **Testing** | Solo equipo | 2 usuarios | 5+ usuarios |
-| **Funcionalidad** | 60% | 80% | 100% |
+| Aspecto | Iteración 1 | Iteración 2 | Iteración 3 |
+|---|---|---|---|
+| Etapa | Conceptualización | Prototipo alpha | Prototipo IoT y validación |
+| Entrega | Avance #1 | Avance #2 | Avance #3 |
+| Objetivo | Definir el problema y proponer una solución | Comprobar la arquitectura básica de medición y alerta | Integrar monitoreo remoto y evaluar experimentalmente el sistema |
+| Sensores | pH y turbidez propuestos | TDS V1.0 | Turbidez G-008 |
+| Microcontrolador | No implementado | Arduino Uno | ESP8266 NodeMCU |
+| Alertas | Propuesta de alerta temprana | LED y zumbador | Estado de alerta y notificaciones Telegram |
+| Comunicación | Propuesta de monitoreo independiente | USB y monitor serial | Wi-Fi |
+| Almacenamiento | No implementado | Visualización serial | ThingSpeak |
+| Alimentación | No definida | USB desde computador | Power bank |
+| Encapsulado | Nodo sumergible conceptual | Diseño 3D conceptual | Montaje experimental en protoboard |
+| Validación | Investigación y análisis del problema | Pruebas de respuesta del sensor TDS | Caracterización, estimación de NTU y pruebas de alertas |
 
 ---
 
-## Evolución del Diseño
+## Evolución del diseño
 
-### Versión 1 (Iteración 1) - Concepto Inicial
-**Fecha:** [XX/XX/2025]  
-**Estado:** Prototipo alpha - Prueba de concepto
+### Iteración 1 – Conceptualización de la solución
 
-**Características:**
-- [Descripción breve]
-- Problemas principales identificados
-- Aprendizajes clave
+**Estado:** Propuesta conceptual.
 
-### Versión 2 (Iteración 2) - Primera Mejora
-**Fecha:** [XX/XX/2025]  
-**Estado:** Prototipo funcional mejorado
+Se identificó como problemática el deterioro de los ecosistemas acuáticos asociado a los residuos de la salmonicultura, junto con la falta de monitoreo continuo e independiente.
 
-**Mejoras implementadas:**
-- [Mejora 1]
-- [Mejora 2]
+Como solución inicial, se propuso desarrollar un nodo de monitoreo ambiental capaz de medir pH y turbidez, generar registros propios y proporcionar alertas tempranas.
 
-**Problemas pendientes:**
-- [Problema 1]
-- [Problema 2]
+**Resultados principales:**
+- Identificación de la problemática y sus actores involucrados.
+- Análisis de las brechas de monitoreo ambiental.
+- Definición de una solución tecnológica basada en sensores.
+- Vinculación con el ODS 14 y sus metas ambientales.
 
-### Versión 3 (Iteración 3) - Versión Final
-**Fecha:** [XX/XX/2025]  
-**Estado:** Prototipo de alta resolución
+**Limitación:** La propuesta todavía no contaba con una implementación física que permitiera comprobar su funcionamiento.
 
-**Mejoras finales:**
-- [Mejora 1]
-- [Mejora 2]
+### Iteración 2 – Prototipo alpha funcional
 
-**Resultado:**
-- Sistema robusto y probado
-- Listo para piloto en terreno
+**Estado:** Prueba de concepto implementada.
 
----
+Se construyó un primer prototipo utilizando un Arduino Uno, un sensor TDS V1.0 y un sistema de alerta compuesto por un LED y un zumbador.
 
-## Justificación de Cambios
+Aunque inicialmente se habían considerado sensores de pH y turbidez, se utilizó un sensor TDS por disponibilidad, con el propósito de validar primero la arquitectura de adquisición, procesamiento y alerta.
 
-### Hardware
-**De v1 a v2:**
-- Cambio: [Descripción]
-- Razón: [Justificación técnica]
-- Impacto: [Mejora cuantitativa]
+**Resultados principales:**
+- Lectura analógica de la señal del sensor.
+- Conversión de las mediciones a valores estimados de TDS en ppm.
+- Configuración de un umbral modificable desde el monitor serial.
+- Activación del LED y zumbador al superar el umbral.
+- Pruebas con agua de la llave y adición de sal.
+- Desarrollo de un diseño conceptual de encapsulado.
 
-**De v2 a v3:**
-- Cambio: [Descripción]
-- Razón: [Justificación técnica]
-- Impacto: [Mejora cuantitativa]
+**Limitaciones identificadas:**
+- Dependencia del computador para alimentación y comunicación.
+- Ausencia de transmisión inalámbrica y almacenamiento remoto.
+- El TDS no mide directamente las partículas suspendidas.
+- Necesidad de avanzar hacia el sensor asociado a la problemática original.
 
-### Software
-**De v1 a v2:**
-- [Cambios principales]
+### Iteración 3 – Prototipo IoT funcional y validación
 
-**De v2 a v3:**
-- [Cambios principales]
+**Estado:** Prototipo integrado y evaluado experimentalmente.
 
-### Diseño 3D
-**De v1 a v2:**
-- [Cambios en encapsulado]
+Se reemplazó la arquitectura inicial por un ESP8266 NodeMCU y un sensor de turbidez G-008, incorporando conectividad Wi-Fi, almacenamiento en ThingSpeak y notificaciones mediante Telegram.
 
-**De v2 a v3:**
-- [Cambios finales]
+Esta etapa permitió evaluar tanto la respuesta del sensor frente a distintas concentraciones de caolín como el funcionamiento de la cadena completa de monitoreo y alerta.
+
+**Resultados principales:**
+- Determinación del voltaje de referencia en agua limpia.
+- Caracterización del sensor mediante cinco concentraciones de caolín.
+- Obtención de una ecuación para estimar turbidez en NTU.
+- Transmisión periódica de mediciones a ThingSpeak.
+- Evaluación de cinco ciclos experimentales de alerta.
+- Verificación de notificaciones mediante Telegram.
+
+**Limitaciones pendientes:**
+- Ausencia de calibración directa con turbidímetro.
+- Variaciones experimentales asociadas a las muestras de caolín.
+- Fluctuaciones en la activación de alertas cerca del umbral.
+- Falta de validación en condiciones ambientales reales.
 
 ---
 
-## Incorporación de Feedback
+## Justificación de los cambios
 
-### Feedback del Avance #1 → Cambios en v2
-1. [Comentario profesor/ayudante]
-   - Acción tomada: [Descripción]
-
-### Feedback del Avance #2 → Cambios en v3
-1. [Comentario profesor/ayudante]
-   - Acción tomada: [Descripción]
-
-### Feedback de Usuarios → Cambios en v3
-1. [Comentario común de usuarios]
-   - Acción tomada: [Descripción]
+| Transición | Cambio implementado | Justificación | Resultado |
+|---|---|---|---|
+| Iteración 1 → 2 | Construcción de un prototipo con Arduino y sensor TDS | Comprobar el funcionamiento básico del sistema con componentes disponibles | Se verificó la lectura del sensor y la activación de alertas locales |
+| Iteración 2 → 3 | Sustitución del sensor TDS por el G-008 | Evaluar una variable más directamente relacionada con las partículas suspendidas | Se caracterizó la respuesta del sensor frente a concentraciones de caolín |
+| Iteración 2 → 3 | Sustitución de Arduino Uno por ESP8266 | Incorporar conectividad Wi-Fi | Se habilitó el envío inalámbrico de mediciones |
+| Iteración 2 → 3 | Incorporación de ThingSpeak | Registrar y visualizar las mediciones de forma remota | Se obtuvo un historial de datos y gráficos |
+| Iteración 2 → 3 | Incorporación de notificaciones Telegram | Comunicar automáticamente la superación del umbral | Se verificó la recepción de alertas durante las pruebas |
+| Iteración 2 → 3 | Desarrollo de un protocolo de caracterización | Evaluar cuantitativamente el comportamiento del prototipo | Se obtuvieron promedios, desviaciones estándar y comparaciones bibliográficas |
 
 ---
 
-## Métricas de Mejora
+## Métricas de evolución
 
-| Métrica | v1 | v2 | v3 | Mejora Total |
-|---------|----|----|----| -------------|
-| Tiempo respuesta (ms) | 500 | 200 | 100 | ↓80% |
-| Consumo (mA) | 250 | 180 | 120 | ↓52% |
-| Tasa de errores (%) | 15 | 5 | 1 | ↓93% |
-| Satisfacción usuario (1-5) | 3.0 | 3.8 | 4.5 | ↑50% |
+| Métrica | Iteración 1 | Iteración 2 | Iteración 3 |
+|---|---|---|---|
+| Intervalo de lectura o registro | No implementado | Aproximadamente 1 segundo por lectura | Aproximadamente 20 segundos entre registros enviados |
+| Variable evaluada | pH y turbidez propuestos | TDS estimados (ppm) | Voltaje y turbidez estimada (NTU) |
+| Alerta | Conceptual | Local, mediante LED y zumbador | Remota, mediante Telegram |
+| Registro histórico remoto | No | No | Sí |
+| Pruebas documentadas | Análisis de la problemática | Agua de la llave y solución salina | Agua limpia, cinco concentraciones de caolín y cinco ciclos de alertas |
+| Tiempo de notificación remota | No aplica | No aplica | Aproximadamente 10–13 segundos |
+
+Los indicadores representan funcionalidades y condiciones de evaluación de cada etapa. No constituyen porcentajes de mejora directamente comparables, ya que las variables medidas y las arquitecturas fueron diferentes.
 
 ---
 
-## Lecciones Aprendidas
+## Lecciones aprendidas
 
 ### Técnicas
-- [Lección 1]
-- [Lección 2]
 
-### De Proceso
-- [Lección 1]
-- [Lección 2]
+- La selección de sensores debe responder tanto a la problemática ambiental como a la disponibilidad de componentes.
+- Verificar una arquitectura básica antes de incorporar conectividad facilita la integración progresiva.
+- La conversión de señales eléctricas a unidades físicas requiere calibración y validación experimental.
+- La estabilidad de las lecturas es importante para evitar activaciones sucesivas de alertas.
 
-### De Trabajo en Equipo
-- [Lección 1]
-- [Lección 2]
+### Del proceso de diseño
+
+- El desarrollo iterativo permitió modificar decisiones iniciales a partir de las limitaciones observadas.
+- La documentación de las pruebas facilita identificar errores y fundamentar mejoras.
+- La validación funcional de un prototipo no equivale a demostrar su precisión ni su impacto ambiental real.
+
+### Proyección
+
+La siguiente etapa de desarrollo debería concentrarse en calibración con instrumentos de referencia, protección del montaje, reducción de falsas alertas y evaluación en terreno.
+
+---
+
+## Documentación de referencia
+
+- **Avance #1:** Presentación e informe de la problemática ambiental y propuesta de solución.
+- **Avance #2:** Presentación del prototipo alpha funcional y código Arduino correspondiente.
+- **Avance #3:** Informe de integración IoT, caracterización experimental y validación del sistema.
+
+Cada iteración conserva sus propios antecedentes para permitir la trazabilidad de las decisiones y modificaciones realizadas durante el proyecto.
