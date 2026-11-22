@@ -1,86 +1,85 @@
-# Planos Técnicos
+# Planos Técnicos – Prototipo IoT de Monitoreo de Turbidez
 
-## Planos Requeridos
+## 1. Descripción general
 
-### 1. Plano de Conjunto
-`plano_conjunto_v3.pdf`
+Esta carpeta contiene los planos técnicos del encapsulado diseñado para el prototipo IoT de monitoreo de turbidez, desarrollado en el marco del Avance #3 de la asignatura TEI201 – Taller de Diseño en Ingeniería.
 
-Incluir:
-- Vistas principales (frontal, lateral, superior)
-- Escala apropiada
-- Cotas principales externas
-- Tabla de piezas
+El diseño corresponde a un nodo flotante destinado al monitoreo de turbidez en sistemas de salmonicultura. Su estructura contempla una caja estanca, una bandeja interior desmontable y mecanismos de fijación para los componentes electrónicos.
 
-### 2. Planos de Detalle
-Para cada componente crítico del encapsulado:
-- Cotas completas
-- Tolerancias importantes
-- Notas de fabricación
+Los planos permiten documentar las dimensiones, materiales, modificaciones, conexiones y procedimientos necesarios para la fabricación y el ensamblaje del sistema.
 
----
+## 2. Archivo disponible
 
-## Estándares de Planos
+**`planos.pdf` – Planos técnicos del nodo flotante IoT**
 
-### Vistas Ortogonales Requeridas
-- Vista Frontal
-- Vista Superior
-- Vista Lateral Derecha
-- Vista Isométrica (referencia)
+Documento de cuatro páginas en formato A3, con dimensiones expresadas en milímetros y tolerancias generales ISO 2768-m.
 
-### Cortes
-- Corte A-A: Sección transversal mostrando interior
-- Corte B-B: (si es necesario para claridad)
+## 3. Descripción de los planos
 
----
+### PL-01. Conjunto general – Nodo flotante
 
-## Formato de Planos
+Presenta la distribución general del prototipo ensamblado mediante vistas, cortes y una lista de piezas.
 
-**Tamaño de hoja:** A4 o A3  
-**Orientación:** Según convenga  
-**Escala:** 1:1, 1:2, o según sea necesario  
-**Unidades:** Milímetros (mm)
+Incluye la disposición de la caja estanca, el sensor de turbidez, la bandeja portacomponentes, el ESP8266 NodeMCU, la protoboard y la batería externa.
 
-### Información en Cajetín
-- Título del proyecto
-- Nombre de la pieza/ensamble
-- Escala
-- Material
-- Fecha
-- Versión
-- Integrantes del equipo
+También identifica los elementos de fijación y los materiales necesarios para el montaje.
 
----
+**Escala:** 1:2.
 
-## Acotación
+### PL-02. Caja estanca – Modificaciones
 
-### Reglas Generales
-- Cotas en milímetros sin unidad
-- Líneas de cota finas
-- Texto legible (mín. 2.5mm de altura)
-- Cotas críticas resaltadas
+Detalla las modificaciones previstas para una caja comercial MGC EX225, de dimensiones exteriores 255 × 200 × 80 mm y clasificación IP65.
 
-### Tolerancias
-Indicar tolerancias para:
-- Orificios de tornillos: ±0.1mm
-- Encajes: +0.2mm / +0.0mm
-- Dimensiones generales: ±0.5mm
+Incluye la ubicación del orificio destinado al sensor, las zonas de fijación de los separadores y un detalle ampliado del montaje y sellado del sensor.
 
----
+Se especifica una prueba de estanqueidad previa a la instalación de los componentes electrónicos.
 
-## Exportación desde Fusion 360
+**Escala:** 1:2.
 
-```
-Opción 1: Drawing (Plano tradicional)
-1. Create Drawing
-2. Configurar vistas y cotas
-3. Export como PDF
+### PL-03. Bandeja portacomponentes v9
 
-Opción 2: Export directo
-File > Export > Formato PDF/DWG
-```
+Presenta el diseño de una bandeja interior removible, destinada a organizar y sostener los componentes electrónicos dentro del encapsulado.
+
+La pieza tiene dimensiones generales de 174 × 158 mm y un espesor de 4 mm. Contempla orificios para separadores M3, una abertura para el sensor y zonas de fijación mediante velcro para la batería externa y la protoboard.
+
+Se incluyen parámetros propuestos para su fabricación mediante impresión 3D FDM, utilizando PLA o PETG.
+
+**Escala:** 1:1.
+
+### PL-04. Detalles, montaje y conexiones
+
+Describe los mecanismos de unión de la bandeja mediante separadores y tuercas M3, así como los procedimientos previstos para la fabricación, instalación y desmontaje del sistema.
+
+Incluye una secuencia de 12 pasos que abarca la impresión de la bandeja, las modificaciones de la caja, el sellado del sensor, la fijación de los componentes y la prueba de estanqueidad.
+
+También presenta las conexiones eléctricas principales entre el sensor, la placa acondicionadora, el ESP8266 y la alimentación USB.
+
+**Escala de detalles:** 4:1.
+
+## 4. Criterios de diseño
+
+El encapsulado fue diseñado considerando los siguientes aspectos:
+
+- **Protección de componentes:** utilización de una caja estanca para alojar la electrónica y mantenerla separada del agua.
+- **Organización interna:** incorporación de una bandeja que permite distribuir los componentes dentro de la estructura.
+- **Mantenimiento y reparación:** utilización de fijaciones desmontables y velcro para facilitar el acceso y reemplazo de componentes.
+- **Fabricación:** diseño de una bandeja compatible con impresión 3D y modificaciones específicas sobre una caja comercial.
+- **Integración del sensor:** disposición de una abertura inferior que permite instalar la sonda de turbidez y sellar su unión con el encapsulado.
+
+## 5. Alcance de la documentación
+
+Los planos constituyen la documentación técnica del diseño mecánico propuesto para el nodo flotante.
+
+Las dimensiones, materiales y procedimientos descritos permiten orientar su fabricación y ensamblaje. Sin embargo, las especificaciones de diseño y los ensayos propuestos no deben interpretarse como evidencia de fabricación o validación física, salvo que se encuentren respaldados por pruebas experimentales.
 
 ---
 
-## Archivos a Entregar
+**Proyecto:** Monitoreo IoT de Turbidez
 
-- `plano_conjunto_v3.pdf` - Plano principal
+**Asignatura:** TEI201 – Taller de Diseño en Ingeniería
+
+**Etapa:** Avance #3 – Prototipo IoT Completo
+
+**Documento:** `planos.pdf`
+
+**ODS asociado:** ODS 14 – Vida Submarina, meta 14.1
