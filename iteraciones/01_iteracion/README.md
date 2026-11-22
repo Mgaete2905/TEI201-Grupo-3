@@ -1,153 +1,132 @@
-# Iteración 2 - Primera Mejora Significativa
+# Iteración 1 – Conceptualización de la Solución
 
 ## Información General
 
-**Fecha:** [XX/XX/2025]  
-**Versión:** v2.0  
-**Estado:** Prototipo funcional mejorado  
-**Avance asociado:** Avance #2
+**Versión:** v1.0  
+**Estado:** Propuesta conceptual – Diseño inicial  
+**Avance asociado:** Avance #1 – Presentación de la Problemática  
+**Asignatura:** TEI201 – Taller de Diseño en Ingeniería  
+**ODS asociado:** ODS 14 – Vida Submarina
 
 ---
 
 ## Descripción
 
-Segunda versión del prototipo, incorporando feedback de la iteración 1 y del Avance #1. Incluye mejoras significativas en funcionalidad y primeros pasos en diseño de encapsulado.
+La primera iteración se centró en identificar y analizar la problemática ambiental asociada a la salmonicultura intensiva en el sur de Chile, particularmente la acumulación de residuos orgánicos y químicos que contribuyen al deterioro del ecosistema bentónico y a la generación de condiciones hipóxicas o anaeróbicas.
 
-**Objetivos de esta iteración:**
-- Corregir problemas identificados en v1
-- Agregar funcionalidades adicionales
-- Iniciar diseño 3D del encapsulado
-- Realizar primeras pruebas con usuarios
+A partir de la investigación realizada, se identificó como brecha principal la falta de monitoreo ambiental continuo, independiente y de acceso público, debido a la dependencia de evaluaciones puntuales que dificultan la detección temprana de alteraciones.
+
+Como respuesta, se propuso desarrollar un nodo de monitoreo ambiental de bajo costo, capaz de medir simultáneamente pH y turbidez, generar registros independientes y proporcionar alertas tempranas.
+
+### Objetivos de esta iteración
+
+- Identificar la problemática ambiental y su relación con el ODS 14.
+- Caracterizar a los actores afectados, especialmente pescadores artesanales y comunidades costeras.
+- Analizar las limitaciones de los mecanismos actuales de monitoreo ambiental.
+- Definir una propuesta tecnológica que permita obtener información continua e independiente.
+- Establecer las características iniciales del sistema de monitoreo.
 
 ---
 
-## Cambios Respecto a v1
+## Concepto de Solución
+
+### Hardware propuesto
+
+En esta etapa no se construyó un circuito físico, pero se definieron los componentes generales de la solución.
+
+| Componente | Función propuesta |
+|---|---|
+| Sensor de turbidez | Detectar variaciones en las partículas suspendidas en el agua. |
+| Sensor de pH | Registrar cambios en la acidez o alcalinidad del agua. |
+| Microcontrolador | Procesar las señales obtenidas desde los sensores. |
+| Sistema de comunicación | Permitir la transmisión de mediciones para su consulta. |
+| Nodo sumergible | Proteger los componentes y permitir el monitoreo in situ. |
+
+### Software propuesto
+
+Se planteó un sistema capaz de adquirir y procesar las mediciones, mantener registros históricos y generar alertas ante variaciones relevantes de los parámetros monitoreados.
+
+En esta iteración no se desarrolló código ni se seleccionó una plataforma definitiva de almacenamiento o visualización.
+
+---
+
+## Resultados de la Primera Iteración
+
+### Avances logrados
+
+- **Identificación de la problemática:** se analizó el deterioro ambiental relacionado con la acumulación de residuos provenientes de la salmonicultura.
+- **Análisis de actores:** se identificó a pescadores artesanales y comunidades costeras como beneficiarios potenciales de la solución.
+- **Detección de brechas:** se estableció la necesidad de contar con mediciones continuas e independientes.
+- **Conceptualización tecnológica:** se propuso un nodo de monitoreo basado en sensores de pH y turbidez.
+- **Vinculación con el ODS 14:** se relacionó la solución con la prevención de la contaminación marina y la protección de los ecosistemas acuáticos.
+
+### Limitaciones identificadas
+
+| Limitación | Descripción | Mejora propuesta |
+|---|---|---|
+| Ausencia de prototipo físico | La solución se encontraba únicamente en etapa conceptual. | Construir un prototipo alpha para verificar la factibilidad técnica. |
+| Sensores no evaluados | No existían mediciones experimentales que permitieran comprobar su respuesta. | Implementar un sensor disponible y realizar pruebas controladas. |
+| Arquitectura sin validar | No se había comprobado la integración entre medición, procesamiento y alerta. | Desarrollar un circuito básico con microcontrolador y sistema de alerta. |
+| Falta de resultados experimentales | La propuesta no contaba con datos propios de funcionamiento. | Registrar mediciones y documentar las primeras pruebas. |
+
+---
+
+## Aprendizajes
+
+### Técnicos
+
+- La selección de variables ambientales debe estar relacionada con el fenómeno que se busca monitorear.
+- Un sistema de monitoreo requiere integrar adquisición de datos, procesamiento y mecanismos de alerta.
+- La factibilidad de una solución tecnológica debe comprobarse mediante pruebas experimentales.
+
+### De Diseño
+
+- La identificación de las necesidades de los usuarios permite orientar las características de la solución.
+- El monitoreo independiente constituye un requisito importante para abordar la brecha de información identificada.
+- El desarrollo del prototipo debe realizarse progresivamente, comenzando por validar sus funciones esenciales.
+
+---
+
+## Plan para la Iteración 2
+
+A partir de la propuesta conceptual, se estableció como siguiente etapa la construcción de un prototipo alpha que permitiera verificar la arquitectura básica del sistema.
 
 ### Hardware
-**Agregado:**
-- [Componente nuevo 1]
-- [Componente nuevo 2]
 
-**Modificado:**
-- [Cambio 1] - Razón: [Justificación]
-- [Cambio 2] - Razón: [Justificación]
-
-**Removido:**
-- [Componente removido] - Razón: [Justificación]
+- [x] Seleccionar un microcontrolador para procesar las mediciones.
+- [x] Implementar un sensor disponible para realizar las primeras pruebas.
+- [x] Incorporar un mecanismo de alerta local.
+- [x] Construir un circuito experimental en protoboard.
 
 ### Software
-**Nuevas funcionalidades:**
-- [Feature 1]
-- [Feature 2]
 
-**Optimizaciones:**
-- [Optimización 1]
-- [Optimización 2]
+- [x] Desarrollar un programa para adquirir y procesar lecturas.
+- [x] Incorporar un umbral de activación de alertas.
+- [x] Permitir la visualización de los resultados mediante comunicación serial.
 
-**Bugs corregidos:**
-- [Bug 1 de v1]
-- [Bug 2 de v1]
+### Diseño
 
-### Diseño Mecánico
-- Primer diseño de encapsulado en Fusion 360
-- Prototipo impreso en 3D
-- Integración de componentes en carcasa
+- [x] Desarrollar una propuesta conceptual de encapsulado.
+- [x] Documentar las conexiones y componentes utilizados.
+- [x] Realizar pruebas iniciales de funcionamiento.
+
+Las actividades anteriores fueron abordadas durante la segunda iteración, utilizando Arduino Uno, un sensor TDS y un sistema de alerta mediante LED y zumbador.
 
 ---
 
-## Fotos del Prototipo v2
+## Archivos de esta Iteración
 
-Incluir en esta carpeta:
-- `v2_prototipo_completo.jpg`
-- `v2_circuito_integrado.jpg`
-- `v2_encapsulado_inicial.jpg`
-- `v2_testing_usuario.jpg`
+Esta carpeta contiene la documentación correspondiente a la etapa de conceptualización:
 
----
+- **Presentación del Avance #1:** exposición de la problemática, los actores involucrados y la solución propuesta.
+- **Informe del Avance #1:** investigación, análisis de brechas, caracterización de usuarios y conceptualización del sistema.
 
-## Resultados de Testing
-
-### Funcionalidad Lograda
-✅ [Función 1]  
-✅ [Función 2]  
-✅ [Función 3]  
-⚠️ [Función 4 - parcial]
-
-### Feedback del Avance #2
-
-**Comentarios del profesor/ayudante:**
-1. [Comentario 1]
-   - Acción: [Plan de mejora para v3]
-
-2. [Comentario 2]
-   - Acción: [Plan de mejora para v3]
-
-### Testing con Usuarios (2-3 personas)
-
-**Resultados cuantitativos:**
-- Facilidad de uso promedio: [X/5]
-- Satisfacción promedio: [X/5]
-
-**Feedback cualitativo:**
-- Positivo: [Comentarios]
-- A mejorar: [Comentarios]
+No se incluyen archivos de código, esquemas de conexiones ni fotografías de un montaje físico, debido a que estos elementos se desarrollaron en etapas posteriores.
 
 ---
 
-## Problemas Pendientes
+## Conclusión
 
-1. **Problema 1:**
-   - Descripción: [Detalles]
-   - Prioridad: Alta/Media/Baja
-   - Plan para v3: [Solución propuesta]
+La primera iteración permitió establecer las bases conceptuales del proyecto, identificando una problemática ambiental concreta y proponiendo una solución tecnológica orientada al monitoreo continuo e independiente de la calidad del agua.
 
-2. **Problema 2:**
-   - Descripción: [Detalles]
-   - Prioridad: Alta/Media/Baja
-   - Plan para v3: [Solución propuesta]
-
----
-
-## Comparación v1 vs v2
-
-| Aspecto | v1 | v2 | Mejora |
-|---------|----|----|--------|
-| Sensores funcionales | 2/3 | 3/3 | ✅ |
-| Tiempo de respuesta | 500ms | 200ms | ↓60% |
-| Consumo energético | 250mA | 180mA | ↓28% |
-| Encapsulado | ❌ | Prototipo | ✅ |
-| Usuarios testeados | 0 | 2 | ✅ |
-
----
-
-## Plan para Iteración 3 (Versión Final)
-
-### Mejoras Críticas
-
-**Hardware:**
-- [ ] [Mejora crítica 1]
-- [ ] [Mejora crítica 2]
-
-**Software:**
-- [ ] [Optimización 1]
-- [ ] [Feature faltante]
-
-**Diseño:**
-- [ ] Refinar encapsulado
-- [ ] Mejorar accesibilidad
-- [ ] Finalizar sistema de montaje
-
-**Testing:**
-- [ ] Testear con 5+ usuarios
-- [ ] Validar métricas ODS
-- [ ] Instalación en contexto real
-
----
-
-## Archivos en esta Carpeta
-
-- `v2_codigo.ino` - Código de esta versión
-- `v2_esquema.png` - Esquema del circuito actualizado
-- `v2_modelo3d.f3d` - Primer diseño en Fusion 360
-- `v2_fotos/` - Fotografías del prototipo
-- `v2_feedback.pdf` - Compilación de comentarios recibidos
+Aunque todavía no se contaba con un prototipo físico, esta etapa permitió definir los objetivos, las variables de interés y las características generales del sistema, proporcionando los fundamentos para desarrollar y evaluar el prototipo alpha en la siguiente iteración.
