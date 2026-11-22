@@ -1,39 +1,50 @@
-# Fotografías del Prototipo
+# Fotografías del Prototipo – Monitoreo IoT de Turbidez
 
-## Requisitos de las Fotos
+## 1. Descripción general
 
-### Calidad
-- **Resolución mínima:** 1920x1080 px
-- **Formato:** JPG o PNG
-- **Iluminación:** Buena iluminación natural o artificial uniforme
-- **Fondo:** Neutro y sin distracciones
+Esta carpeta contiene el registro fotográfico del desarrollo y montaje físico del prototipo IoT de monitoreo de turbidez, correspondiente al Avance #3 de la asignatura TEI201 – Taller de Diseño en Ingeniería.
 
-### Tomas Requeridas
+Las fotografías documentan la integración de los componentes electrónicos, la fabricación y montaje del encapsulado, las conexiones del circuito y la disposición final del sistema.
 
-1. **Vista general del prototipo completo**
-   - `01_vista_general.jpg`
+Estas evidencias permiten complementar los esquemas eléctricos, los modelos 3D y los planos técnicos disponibles en el repositorio.
 
-2. **Vista del circuito interno**
-   - `02_circuito_interno.jpg`
+## 2. Registro fotográfico
 
-3. **Detalle de conexiones críticas**
-   - `03_detalle_conexiones.jpg`
+| Archivo | Descripción |
+|---|---|
+| `01_montaje_interior_encapsulado.jpeg` | Vista general del montaje interior, mostrando la distribución del ESP8266 NodeMCU, la protoboard, la batería externa y el sensor sobre la bandeja portacomponentes. |
+| `02_encapsulado_cerrado.jpeg` | Vista exterior del encapsulado con su tapa instalada, mostrando la configuración cerrada de la caja. |
+| `03_detalle_conexionesv1.jpeg` | Vista del circuito electrónico inicial, con el ESP8266, el sensor G-008 y las conexiones mediante cables Dupont. |
+| `03_detalle_conexionesv2.jpeg` | Vista superior del montaje electrónico sobre protoboard, donde se observa la distribución de conexiones y resistencias. |
+| `03_detalle_conexionesv3.jpeg` | Acercamiento al circuito de acondicionamiento de señal, incluyendo las resistencias utilizadas en el divisor de voltaje. |
+| `04_armado_placa_base.jpg` | Montaje de la bandeja portacomponentes dentro del encapsulado, mostrando los puntos de fijación, la abertura para el sensor y las superficies de sujeción. |
+| `05_contexto_uso.jpg` | Prueba de estanqueidad del encapsulado en una fuente con agua, realizada para comprobar que el sistema de sellado impide el ingreso de agua al interior de la caja y protege los componentes electrónicos. Durante la prueba no se observó ingreso de agua al encapsulado. |
+| `06_proceso_montaje.jpg` | Registro del proceso de fabricación y montaje de la caja, incluyendo la instalación del sensor y los elementos de fijación de la bandeja interior. |
 
-4. **Vista de sensores montados**
-   - `04_sensores.jpg`
+## 3. Integración del hardware
 
-5. **Vista de actuadores**
-   - `05_actuadores.jpg`
+El montaje utiliza una caja de protección que contiene los principales componentes electrónicos del sistema.
 
-6. **Encapsulado cerrado (si aplica)**
-   - `06_encapsulado_cerrado.jpg`
+En su interior se instaló una bandeja portacomponentes fabricada mediante impresión 3D, destinada a organizar y fijar el ESP8266 NodeMCU, la protoboard y la batería externa.
 
-7. **Prototipo en contexto de uso**
-   - `07_contexto_uso.jpg`
+El sensor de turbidez se integró mediante una abertura en la base del encapsulado, permitiendo mantener su conexión con el circuito electrónico.
 
----
+Las conexiones eléctricas se realizaron mediante cables Dupont y un divisor resistivo para adaptar la señal analógica del sensor al microcontrolador.
 
-## Nomenclatura
-- Numerar según orden: `01_`, `02_`, etc.
-- Usar nombres descriptivos
-- Incluir versión si hay múltiples: `v3_01_vista_general.jpg`
+## 4. Fabricación y montaje del encapsulado
+
+El registro fotográfico evidencia las principales etapas de integración física del prototipo:
+
+1. Preparación de la caja y sus puntos de fijación.
+2. Instalación del sensor de turbidez en la abertura correspondiente.
+3. Incorporación de la bandeja portacomponentes.
+4. Montaje del ESP8266, la protoboard y la batería externa.
+5. Organización de los cables y conexiones eléctricas.
+6. Cierre del encapsulado.
+
+La disposición interior busca facilitar el acceso a los componentes para futuras modificaciones, inspecciones y tareas de mantenimiento.
+
+
+**Etapa:** Avance #3 – Prototipo IoT Completo
+
+**ODS asociado:** ODS 14 – Vida Submarina, meta 14.1
