@@ -1,93 +1,83 @@
-# Modelos 3D – Fusion 360
+# Modelos 3D – Autodesk Fusion 360
 
 ## 1. Descripción general
 
-Esta carpeta contiene los archivos de modelado tridimensional desarrollados para el diseño mecánico del prototipo IoT de monitoreo de turbidez, correspondiente al Avance #3 de la asignatura TEI201 – Taller de Diseño en Ingeniería.
+Esta carpeta contiene los archivos de diseño tridimensional desarrollados en Autodesk Fusion 360 para el prototipo IoT de monitoreo de turbidez.
 
-El diseño contempla dos elementos principales: el nodo flotante, que integra el encapsulado y los componentes del sistema, y una bandeja portacomponentes destinada a organizar y fijar la electrónica en el interior de la caja.
+El diseño contempla el ensamblaje del encapsulado, la distribución de los componentes electrónicos y la fabricación de una bandeja portacomponentes mediante impresión 3D.
 
-Los modelos permiten visualizar la disposición de los elementos, evaluar su integración espacial y documentar las soluciones adoptadas para la fabricación y el ensamblaje.
+Los archivos permiten documentar la geometría del sistema y facilitar su reproducción, modificación y mantenimiento.
 
-## 2. Archivos del diseño
+## 2. Archivos disponibles
 
-### `nodo_flotante_ensamble.f3d` – Modelo del nodo flotante
-
-Archivo de diseño tridimensional desarrollado en Autodesk Fusion 360, correspondiente al conjunto mecánico del prototipo.
-
-El modelo representa la integración del encapsulado con los elementos principales del sistema, considerando:
-
-- Caja de protección para los componentes electrónicos.
-- Distribución interior de los componentes.
-- Bandeja portacomponentes.
-- Ubicación del sensor de turbidez.
-- Espacios destinados al microcontrolador y a la batería externa.
-- Integración del sistema de flotación.
-
-Este archivo constituye la referencia digital del conjunto y permite estudiar la disposición de los componentes antes de su ensamblaje físico.
-
-### `bandeja_v9.stl` – Bandeja portacomponentes
-
-Archivo tridimensional de la bandeja interior diseñada para sostener y organizar los componentes electrónicos dentro del encapsulado.
-
-**Características geométricas:**
-
-| Característica | Especificación |
+| Archivo | Descripción |
 |---|---|
-| Dimensiones generales | 174 × 158 mm |
-| Espesor máximo | 4 mm |
-| Formato | STL |
-| Aplicación | Soporte interior de componentes |
-| Método de fabricación previsto | Impresión 3D |
+| `nodo_flotante_ensamble.f3d` | Modelo tridimensional del ensamblaje del nodo, incluyendo el encapsulado y representaciones de los principales componentes internos. |
+| `bandeja_v9.stl` | Modelo de la bandeja portacomponentes preparado para su fabricación mediante impresión 3D. |
 
-La bandeja contempla espacios para instalar el ESP8266 NodeMCU, la protoboard y la batería externa, además de una abertura destinada a la integración del sensor de turbidez.
+El archivo F3D permite consultar y modificar el diseño en Fusion 360, mientras que el archivo STL contiene la geometría de la bandeja para su procesamiento en un programa de laminado.
 
-Su diseño busca facilitar el montaje, mantener ordenados los componentes y permitir su acceso para futuras modificaciones o tareas de mantenimiento.
+## 3. Diseño de la bandeja portacomponentes
 
-## 3. Relación entre los modelos
+La bandeja fue diseñada para organizar y fijar los componentes electrónicos dentro de la caja estanca comercial MGC EX225.
 
-El nodo flotante representa el conjunto general del dispositivo, mientras que la bandeja constituye una pieza específica de su estructura interior.
+Sus dimensiones generales son de **174 × 158 mm**, con un espesor de **4 mm**.
 
-La bandeja se instala dentro del encapsulado y permite organizar los componentes electrónicos sin fijarlos directamente a la base de la caja.
+El diseño permite distribuir el microcontrolador ESP8266 NodeMCU, la protoboard y la batería externa dentro del encapsulado, incorporando elementos de fijación para facilitar el ensamblaje y mantenimiento.
 
-Esta configuración facilita el ensamblaje y permite separar las funciones de protección exterior y soporte interior.
+## 4. Configuración de impresión 3D
 
-## 4. Criterios de diseño
+La bandeja fue preparada para su fabricación mediante impresión 3D por deposición de filamento fundido (FDM), utilizando una impresora Bambu Lab A1 mini y el software Bambu Studio.
 
-Durante el desarrollo de los modelos tridimensionales se consideraron los siguientes criterios:
+### 4.1. Parámetros de impresión
 
-**Integración:** distribución de los componentes electrónicos dentro del espacio disponible en el encapsulado.
+| Parámetro | Configuración |
+|---|---|
+| Pieza | Bandeja portacomponentes v9 |
+| Archivo | `bandeja_v9.stl` |
+| Impresora | Bambu Lab A1 mini |
+| Software de laminado | Bambu Studio |
+| Tecnología | FDM |
+| Altura de capa | 0,20 mm |
+| Porcentaje de relleno | 15 % |
+| Uso de soportes | No |
+| Temperatura del extrusor | 220 °C |
+| Temperatura de la cama | 65 °C |
+| Velocidad de impresión | Perfil estándar 0,20 mm de Bambu Studio |
+| Material de filamento | No especificado |
 
-**Protección:** utilización de una caja que permita aislar la electrónica del contacto directo con el agua.
+### 4.2. Resultados del laminado
 
-**Mantenimiento:** incorporación de una bandeja desmontable para facilitar la revisión y sustitución de componentes.
+Los siguientes valores fueron obtenidos a partir de la estimación generada por Bambu Studio:
 
-**Fabricación:** diseño de una pieza interior compatible con tecnologías de impresión 3D.
+| Indicador | Resultado |
+|---|---|
+| Longitud de filamento estimada | 21,90 m |
+| Masa de filamento estimada | 65,33 g |
+| Tiempo de impresión del modelo | 1 h 37 min |
+| Preparación y tiempo adicional | 6 min 4 s + 19 s |
+| Tiempo total estimado | **1 h 43 min** |
+| Cambios de filamento | 0 |
+| Coste indicado por el software | 1,31 (unidad monetaria no especificada) |
 
-**Flotabilidad:** consideración de elementos de flotación para mantener el dispositivo sobre la superficie del agua durante su utilización.
+Los valores corresponden a estimaciones del software de laminado y pueden presentar diferencias respecto del consumo y tiempo efectivos de fabricación.
 
-## 5. Instrucciones de apertura
+### 4.3. Consideraciones de fabricación
 
-### Modelo del nodo flotante
+La configuración seleccionada contempla una altura de capa de 0,20 mm y un relleno del 15 %, buscando obtener una pieza funcional para el montaje de los componentes electrónicos.
 
-1. Abrir Autodesk Fusion 360.
-2. Importar o abrir el archivo `nodo_flotante_ensamble.f3d`.
-3. Revisar el modelo tridimensional y la disposición de sus componentes.
-4. Utilizar las herramientas de visualización para inspeccionar el conjunto desde diferentes perspectivas.
+La geometría de la bandeja permitió preparar el proceso de impresión sin utilizar estructuras de soporte, de acuerdo con la configuración registrada en Bambu Studio.
 
-### Modelo de la bandeja
+Una vez fabricada, la bandeja se integró al interior del encapsulado mediante elementos de fijación, permitiendo organizar los componentes y facilitar el acceso para mantenimiento.
 
-1. Abrir el archivo `bandeja_v9.stl` en un programa compatible con archivos STL.
-2. Inspeccionar la geometría de la pieza.
-3. Revisar sus dimensiones y orientación.
-4. Preparar el archivo en un programa de laminado (*slicer*) si se desea fabricar mediante impresión 3D.
+## 5. Integración con el ensamblaje 3D
 
-## 6. Fabricación e integración física
+El archivo `nodo_flotante_ensamble.f3d` representa la disposición general de los componentes dentro del encapsulado.
 
-El diseño tridimensional permitió avanzar desde la propuesta digital hacia la construcción del encapsulado físico.
+El ensamblaje incluye representaciones de la caja, tapa, bandeja portacomponentes, microcontrolador ESP8266 NodeMCU, protoboard, batería externa, sensor de turbidez y elementos de fijación.
 
-La bandeja portacomponentes fue fabricada mediante impresión 3D e instalada dentro de la caja de protección.
+Este modelo complementa las visualizaciones tridimensionales y los planos técnicos del proyecto.
 
-Posteriormente, se incorporaron el microcontrolador ESP8266, la protoboard, la batería externa y el sensor de turbidez, utilizando los espacios y puntos de fijación previstos.
+**Asignatura:** TEI201 – Taller de Diseño en Ingeniería
 
-El montaje final se encuentra documentado mediante fotografías en la sección de hardware del repositorio.
-
+**Etapa:** Avance #3 – Prototipo IoT Completo
