@@ -8,7 +8,7 @@ El software fue programado en Arduino IDE para el ESP8266 NodeMCU y permite adqu
 
 ## Archivos principales
 
-### `TEI201(2).ino`
+### `codigo_final.ino`
 
 Archivo principal del proyecto, que contiene la programación necesaria para controlar el proceso de medición, procesamiento y transmisión de datos.
 
