@@ -45,24 +45,9 @@ La presentación comprende 20 diapositivas, organizadas en torno a:
 
 También contempla una demostración del funcionamiento del sistema mediante el registro de mediciones en ThingSpeak.
 
-El archivo principal es `Avance 3 – Monitoreo IoT de turbidez.pdf`.
+El archivo principal es `presentacion_final`.
 
-## 3. Estructura de archivos
-
-```text
-documentos/
-├── README.md
-├── reporte_final/
-│   ├── README.md
-│   └── informe_final.pdf
-└── presentacion/
-    ├── README.md
-    └── Avance 3 – Monitoreo IoT de turbidez.pdf
-```
-
-Cada subcarpeta dispone de su propio README, que describe con mayor detalle el contenido y la finalidad del documento correspondiente.
-
-## 4. Relación con el repositorio
+## 3. Relación con el repositorio
 
 Los documentos contenidos en esta carpeta sintetizan el desarrollo del proyecto y se complementan con la información técnica disponible en las demás secciones del repositorio.
 
