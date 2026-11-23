@@ -134,8 +134,5 @@ Por ello, su aplicación actual se considera principalmente **experimental y ori
 
 El informe incluye bibliografía científica, documentación técnica y antecedentes ambientales utilizados para fundamentar la problemática y analizar los resultados.
 
-Las referencias completas se encuentran en la sección **8. Bibliografía** del documento PDF.
+Las referencias completas se encuentran en la sección 
 
-**Entrega documentada:** Avance 03 – Prototipo IoT Completo
-
-**Fecha:** 23 de noviembre de 2026
