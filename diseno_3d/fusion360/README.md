@@ -91,15 +91,3 @@ Posteriormente, se incorporaron el microcontrolador ESP8266, la protoboard, la b
 
 El montaje final se encuentra documentado mediante fotografías en la sección de hardware del repositorio.
 
-## 7. Documentación complementaria
-
-Los modelos tridimensionales se complementan con:
-
-- **Planos técnicos:** dimensiones, vistas, cortes y detalles de fabricación.
-- **Esquemas electrónicos:** conexiones del sensor y el microcontrolador.
-- **Fotografías del prototipo:** evidencia de fabricación, montaje e integración física.
-- **Lista de materiales (BOM):** componentes y materiales empleados.
-
-**Etapa:** Avance #3 – Prototipo IoT Completo
-
-**ODS asociado:** ODS 14 – Vida Submarina, meta 14.1
