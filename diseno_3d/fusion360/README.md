@@ -78,6 +78,3 @@ El ensamblaje incluye representaciones de la caja, tapa, bandeja portacomponente
 
 Este modelo complementa las visualizaciones tridimensionales y los planos técnicos del proyecto.
 
-**Asignatura:** TEI201 – Taller de Diseño en Ingeniería
-
-**Etapa:** Avance #3 – Prototipo IoT Completo
