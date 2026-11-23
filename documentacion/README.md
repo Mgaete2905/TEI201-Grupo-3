@@ -54,8 +54,3 @@ Los documentos contenidos en esta carpeta sintetizan el desarrollo del proyecto 
 Los archivos de hardware, software, diseño 3D y datos experimentales permiten consultar los antecedentes utilizados durante la construcción y evaluación del prototipo.
 
 De esta manera, el informe y la presentación constituyen los documentos principales de la entrega, mientras que el resto del repositorio proporciona el respaldo técnico y experimental del trabajo realizado.
-
-
-**Etapa:** Avance #3 – Prototipo IoT Completo
-
-**ODS asociado:** ODS 14 – Vida Submarina, meta 14.1
