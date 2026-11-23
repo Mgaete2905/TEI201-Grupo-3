@@ -12,7 +12,7 @@ Su propósito es comunicar de manera visual y sintética el funcionamiento del s
 
 | Archivo | Descripción |
 |---|---|
-| `presentacion_final | Presentación del Avance #3, que documenta el desarrollo técnico, la evaluación experimental y la validación preliminar del prototipo. |
+| presentacion_final | Presentación del Avance #3, que documenta el desarrollo técnico, la evaluación experimental y la validación preliminar del prototipo. |
 
 **Características:**
 
